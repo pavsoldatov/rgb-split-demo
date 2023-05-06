@@ -1,10 +1,11 @@
 # Modern ThreeJS ⚡️
 
-> Modern ThreeJS boilerplate powered by Vite & Typescript.
+A slightly modified fork of the [modern ThreeJS boilerplate](https://github.com/alvarosabu/modern-three/).
 
-![Modern ThreeJS](./public/modern-three.png)
+## Support the original author 💚
 
-Live demo [here](https://modern-three.alvarosaburido.dev/)
+- [Become a Sponsor on GitHub](https://github.com/sponsors/alvarosabu)
+- [One-time donation via PayPal](https://paypal.me/alvarosaburido)
 
 ## Features
 
@@ -14,44 +15,16 @@ Live demo [here](https://modern-three.alvarosaburido.dev/)
 - No classes, just functions 🎯
 - Shader support (glsl) with[vite-plugin-glsl](https://github.com/UstymUkhman/vite-plugin-glsl) 🎨
 
-## You can help me keep working on this project 💚
-
-- [Become a Sponsor on GitHub](https://github.com/sponsors/alvarosabu)
-- [One-time donation via PayPal](https://paypal.me/alvarosaburido)
-
-## Check it out
-
-You can create a repo with this template [here](https://github.com/alvarosabu/modern-three/generate)
-
-Or if you prefer to do it manually with the cleaner git history
-
-```bash
-npx degit alvarosabu/modern-three my-awesome-three
-cd my-awesome-three
-pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
-```
-
 ### Project setup
 
-### Use it
+1. Clone the repo
+2. Run `pnpm i` to install dependencies (`npm install -g pnpm` to install `pnpm` globally)
+3. Run `pnpm dev` to serve the app at [http://localhost:3000](http://localhost:3000)
+4. Run `pnpm build` to get a production build.
 
-```
-pnpm dev
-```
-
-This will serve the app at [http://localhost:3000](http://localhost:3000)
-
-### Build it
-
-```
-pnpm build
-```
-
-Builds the app for production to the `dist` folder.<br>
+The production build is located in the `dist` folder.<br>
 
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
 See the section about [deployment](#deployment) for more information.
-
-![repository-banner.png](https://res.cloudinary.com/alvarosaburido/image/upload/v1612193118/as-portfolio/Repo_Banner_kexozw.png)

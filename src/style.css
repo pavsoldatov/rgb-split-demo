@@ -2,26 +2,10 @@ body {
   margin: 0;
 }
 
-.logo {
-  width: 32px;
+canvas.webgl {
   position: fixed;
-  top: 1rem;
-  left: 1rem;
+  top: 0;
+  left: 0;
+  outline: none;
 }
 
-.footer {
-  position: fixed;
-  bottom: 0;
-  padding: 1rem 0;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  color: #646464;
-  font-size: 0.8rem;
-}
-
-.footer a {
-  color: #6b84cc;
-  text-decoration: none;
-  margin: 0 0.25rem;
-}
