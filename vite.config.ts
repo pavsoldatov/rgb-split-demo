@@ -3,6 +3,7 @@ import glsl from 'vite-plugin-glsl'
 import { resolve } from 'pathe'
 
 export default defineConfig({
+  publicDir: 'public',
   resolve: {
     alias: {
       '/@': resolve(__dirname, './src'),
