@@ -1,12 +1,9 @@
 lockfileVersion: '6.0'
 
 devDependencies:
-  '@tweakpane/core':
-    specifier: ^1.1.1
-    version: 1.1.1
-  '@tweakpane/plugin-essentials':
-    specifier: ^0.1.5
-    version: 0.1.5(tweakpane@3.1.1)
+  '@types/node':
+    specifier: ^20.12.11
+    version: 20.12.11
   '@types/three':
     specifier: ^0.152.0
     version: 0.152.0
@@ -16,15 +13,12 @@ devDependencies:
   three:
     specifier: ^0.152.0
     version: 0.152.0
-  tweakpane:
-    specifier: ^3.1.1
-    version: 3.1.1
   typescript:
     specifier: ^4.9.4
     version: 4.9.4
   vite:
     specifier: ^4.0.1
-    version: 4.0.1
+    version: 4.0.1(@types/node@20.12.11)
   vite-plugin-glsl:
     specifier: ^1.0.1
     version: 1.0.1(vite@4.0.1)
@@ -243,24 +237,18 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /@tweakpane/core@1.1.1:
-    resolution: {integrity: sha512-bCywfumcPHiaPLzskFrkB5+hw070UHwxPI45e04TmWW/iIyMwFSJlRvKtbN5cX8Xq1VZedxCgBFoJIici0OyKA==}
-    dev: true
-
-  /@tweakpane/plugin-essentials@0.1.5(tweakpane@3.1.1):
-    resolution: {integrity: sha512-dt+fwtUEVmBxsVhGNSqtY6dN3rOmxIt3zSA/cSFMs2eBbMrnBTSkJBe2JMXKodTTR6OOFihq6yxyRFqG5wsP3w==}
-    peerDependencies:
-      tweakpane: ^3.1.0
-    dependencies:
-      tweakpane: 3.1.1
-    dev: true
-
   /@tweenjs/tween.js@18.6.4:
     resolution: {integrity: sha512-lB9lMjuqjtuJrx7/kOkqQBtllspPIN+96OvTCeJ2j5FEzinoAXTdAMFnDAQT1KVPRlnYfBrqxtqP66vDM40xxQ==}
     dev: true
 
   /@types/estree@1.0.0:
     resolution: {integrity: sha512-WulqXMDUTYAXCjZnk6JtIHPigp55cVtDgDrO2gHRwhyJto21+1zbVCtOYB2L1F9w4qCQ0rOGWBnBe0FNTiEJIQ==}
+    dev: true
+
+  /@types/node@20.12.11:
+    resolution: {integrity: sha512-vDg9PZ/zi+Nqp6boSOT7plNuthRugEKixDv5sFTIpkE89MmNtEArAShI4mxuX2+UrLEe9pxC1vm2cjm9YlWbJw==}
+    dependencies:
+      undici-types: 5.26.5
     dev: true
 
   /@types/stats.js@0.17.0:
@@ -411,14 +399,14 @@ packages:
     resolution: {integrity: sha512-uvKoYo4b2bnqzsR4RJFuWecxwMKcgT1nFNmiWooCNr6AxZLCtfkj/xcfFgoi5mFopSVorh7bnvTHPfeW8DINGg==}
     dev: true
 
-  /tweakpane@3.1.1:
-    resolution: {integrity: sha512-b9bpZSvG4KLtvSuyP3r20XWztdbzXleXO1RZN5pS4gcVAVesq0+mYz/bylYIckwh/VZjp3f3zUFJSeV2M3eRCw==}
-    dev: true
-
   /typescript@4.9.4:
     resolution: {integrity: sha512-Uz+dTXYzxXXbsFpM86Wh3dKCxrQqUcVMxwU54orwlJjOpO3ao8L7j5lH+dWfTwgCwIuM9GQ2kvVotzYJMXTBZg==}
     engines: {node: '>=4.2.0'}
     hasBin: true
+    dev: true
+
+  /undici-types@5.26.5:
+    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
     dev: true
 
   /vite-plugin-glsl@1.0.1(vite@4.0.1):
@@ -428,12 +416,12 @@ packages:
       vite: ^3.0.0 || ^4.0.0
     dependencies:
       '@rollup/pluginutils': 5.0.2
-      vite: 4.0.1
+      vite: 4.0.1(@types/node@20.12.11)
     transitivePeerDependencies:
       - rollup
     dev: true
 
-  /vite@4.0.1:
+  /vite@4.0.1(@types/node@20.12.11):
     resolution: {integrity: sha512-kZQPzbDau35iWOhy3CpkrRC7It+HIHtulAzBhMqzGHKRf/4+vmh8rPDDdv98SWQrFWo6//3ozwsRmwQIPZsK9g==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -458,6 +446,7 @@ packages:
       terser:
         optional: true
     dependencies:
+      '@types/node': 20.12.11
       esbuild: 0.16.8
       postcss: 8.4.20
       resolve: 1.22.1

@@ -1,6 +1,0 @@
-export { camera } from './camera'
-export { controls } from './orbit-control'
-export { axesHelper, fpsGraph } from './gui'
-export { renderer, updateRenderer } from './renderer'
-export { resizeHandler } from './resizeHandler'
-export { scene } from './scene'

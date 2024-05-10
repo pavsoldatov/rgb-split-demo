@@ -1,29 +1,10 @@
 {
   "name": "modern-three",
   "version": "1.1.0",
-  "description": "Modern ThreeJS boilerplate powered by Vite & Typescript.",
-  "author": "Alvaro Saburido <hola@alvarosaburido.dev>",
+  "description": "RGB Split Demo",
+  "author": "Pavel Soldatov <pavlo.soldatov92@gmail.com>",
   "license": "MIT",
   "type": "module",
-  "keywords": [
-    "3d",
-    "threejs",
-    "three",
-    "vite",
-    "typescript",
-    "tweakpane"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alvarosabu/modern-three.git"
-  },
-  "bugs": {
-    "url": "https://github.com/alvarosabu/modern-three/issues"
-  },
-  "homepage": "https://github.com/alvarosabu/modern-three#readme",
-  "contributors": [
-    "Alvaro <hola@alvarosaburido.dev>"
-  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -31,12 +12,10 @@
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
   },
   "devDependencies": {
-    "@tweakpane/core": "^1.1.1",
-    "@tweakpane/plugin-essentials": "^0.1.5",
+    "@types/node": "^20.12.11",
     "@types/three": "^0.152.0",
     "pathe": "^1.0.0",
     "three": "^0.152.0",
-    "tweakpane": "^3.1.1",
     "typescript": "^4.9.4",
     "vite": "^4.0.1",
     "vite-plugin-glsl": "^1.0.1"
